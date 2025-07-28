@@ -67,6 +67,8 @@ impl State {
     }
 
     pub(crate) fn render(&mut self) {
+        // todo: render current level
+        
         // Create texture view
         let surface_texture = self
             .surface

@@ -10,7 +10,7 @@ pub struct Engine {
 
 impl Engine {
     pub fn new(window_title: String) -> Self {
-        Engine { window_title }
+        Engine { window_title } // todo: add start level
     }
 
     pub fn run(&self) -> Result<(), EventLoopError> {

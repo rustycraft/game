@@ -19,6 +19,10 @@ fn main() {
         .init();
 
     let engine = engine::Engine::new(GAME_NAME.to_string());
+
+    // todo: add levels and start level
+    //  add level actions as btn and etc :)
+
     engine.run().unwrap_or_else(|e| {
         error!("event loop error: {}", e);
         std::process::exit(1);
