@@ -1,4 +1,5 @@
 use std::sync::Arc;
+use tracing::debug;
 use winit::{
     application::ApplicationHandler,
     event::WindowEvent,
@@ -37,7 +38,7 @@ impl ApplicationHandler for WindowManager {
         let state = self.state.as_mut().unwrap();
         match event {
             WindowEvent::CloseRequested => {
-                println!("The close button was pressed; stopping");
+                debug!("The close button was pressed; stopping");
                 event_loop.exit();
             }
             WindowEvent::RedrawRequested => {
